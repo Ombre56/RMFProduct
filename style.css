@@ -5,6 +5,7 @@ body {
   font-family: 'Consolas', sans-serif;
   background-color: #0C0A11;
   color: #FFFFFF;;
+  list-style: none;
 }
 
 a {
@@ -95,7 +96,42 @@ h1{
       padding-top: 1.25rem;
     }
 
+    .points-text{
+      padding: .625rem 0;
+    }
+
 }
 
 /* page 1 End */
 
+/* page 2 Start */
+
+.Page2-title-container{
+  padding-left: 20px;
+}
+
+.Page2-title{
+  font-size: 3rem;
+}
+
+.Page2-list{
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 600px){
+
+  .Page2-title{
+    font-size: 2.125rem;
+  }
+  .Page2-body,.hero-body{
+    padding-right: 20px;
+    word-wrap: break-word;
+    word-break: break-all;
+    white-space: pre-line;
+    flex-direction: column;
+  }
+
+}
+
+/* page 2 End */
