@@ -58,11 +58,6 @@ h1{
       margin-bottom: 50px;
     }
 
-    .Navigation-button{
-      width: 23px;
-      height: 57px;
-    }
-
     .community-icons{
       padding-bottom: 2rem;
     }
@@ -74,30 +69,21 @@ h1{
   list-style: none;
 }
 
-.Page1-texts-with-icon{
-  font-size: 1.5rem;
-}
-
 @media only screen and (max-width: 600px){
 
+    .Page1-title{
+      font-size: 2.125rem;
+    }
     .Page1-image{
       margin: 50px 0;
-    }
-
-    .Page1-texts-with-icon{
-      font-size: 1.5625rem;
     }
 
     .Page1-hero-head{
       padding-left: 1.5rem;
     }
 
-    .Page1-point{
-      padding-top: 1.25rem;
-    }
-
-    .points-text{
-      padding: .625rem 0;
+    .Page1-body{
+      flex-direction: column;
     }
 
 }
