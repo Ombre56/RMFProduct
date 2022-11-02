@@ -18,8 +18,30 @@ a {
   list-style: none;
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+  border-left: 1px solid #000;
+  }
+  ::-webkit-scrollbar-thumb {
+  background: #575757;
+      box-shadow: inset 0 0 6px #333232;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #575757;
+      box-shadow: inset 0 0 6px #333232;
+  }
+  ::-webkit-scrollbar-thumb:window-inactive {
+    background: #575757;
+  }
+
 h1{
   color: #33FF99;
+}
+
+.img-border img{
+  border: 1px solid #33FF99;
 }
 
 .community-icons i{
@@ -56,8 +78,16 @@ h1{
 }
 
 .Page-list{
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 45px;
+}
+
+.animate-image:hover{
+  transform: scale(1);
+}
+
+.icon-text:hover{
+  color: #33FF99;
 }
 
 @media only screen and (max-width: 600px){
@@ -77,23 +107,34 @@ h1{
     }
 
     .Page-title{
-      font-size: 2.125rem;
+      font-size: 2rem;
+      margin-right: 10px;
     }
 
     .Page-body{
       padding-right: 20px;
       word-wrap: break-word;
-      word-break: break-all;
+      /* word-break: break-all; */
       flex-direction: column;
     }
 }
+
+/* ONLY DESKTOP */
+
+@media only screen and (min-width : 992px) {
+  .separate-div{
+    padding-right: 1.25rem;
+  }
+}
+
+/* ONLY DESKTOP */
 
 /* page 1 Start */
 
 @media only screen and (max-width: 600px){
 
     .Page1-title{
-      font-size: 2.125rem;
+      font-size: 1rem;
     }
     .Page1-image{
       margin: 50px 0;
@@ -110,7 +151,7 @@ h1{
 /* page 2 Start */
 
 .Page2-list{
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 35px;
 }
 
@@ -118,6 +159,7 @@ h1{
 
     .Page2-list{
       white-space: pre-line;
+      word-break: break-all;
     }
 
 }
@@ -141,6 +183,20 @@ h1{
 .show{
   transform: translateY(0px);
   opacity: 1;
+}
+
+.scaleImage{
+  animation: scaling-image-animation 5s ease;
+}
+
+@keyframes scaling-image-animation {
+  0%{
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100%{
+    transform: scale(2);
+  }
 }
 
 /* JS */

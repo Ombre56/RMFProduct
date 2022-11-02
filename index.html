@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Red Macros Factory</title>
+  <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -46,7 +47,7 @@
               <span class="icon">
                 <i class="fa-sharp fa-solid fa-envelope"></i>
               </span>
-              <span class="is-size-4">mb@binary-offensive.com</span>
+              <span class="is-size-4"><a href="mailto::red-macros@binary-offensive.com">mb@binary-offensive.com</a></span>
             </span>
           </div>
         
@@ -62,7 +63,7 @@
 
         <div class="Homepage-image">
           <figure class="image">
-            <img src="assets/images/Homepage-image.png" alt="Homepage-image" />
+            <img class="animate-image" src="assets/images/Homepage-image.png" alt="Homepage-image" id="photo"/>
           </figure>
         </div>
 
@@ -91,7 +92,7 @@
 
       <div class="Page-body hero-body is-flex is-flex is-justify-content-space-between hidden">
         <div>
-          <ol class="Page-list">
+          <ol class="Page-list is-align-items-flex-start">
             <li>» Capabilities overview</li>
             <li>» Quality of Life Improvements</li>
             <li>» Formats supported</li>
@@ -121,7 +122,7 @@
         </div>
 
         <figure class="Page1-image image is-586x365">
-          <img src="assets/images/Page1-image.png" alt="Page1-image">
+          <img src="assets/images/Page1-image.png" alt="Page1-image" id="photo">
         </figure>
       </div>
 
@@ -158,13 +159,13 @@
             <ol class="Page-list pl-4">
               <li>» 25 different VBA infection strategies (so called“generators” – File Dropper is considered one)</li>
               <li>» 23 different command execution tactics (so called“launchers” – Wscript.Shell considered one)</li>
-              <li>» 10 exotic ActiveX-based autoruns (e.g.,InkPicture1_Painted</li>
+              <li>» 10 exotic ActiveX-based autoruns (e.g., InkPicture1_Painted)</li>
               <li>» Full support for shellcode (x86/x64) / .NETassemblies / URLs for payload staging</li>
               <li>» Sandbox execution-guardrails</li>
-              <li>» Obfuscated VBA macro with lowered entropy forML-based detection rate reduction, VBE/JSE script encoding<li>
-              <li>» Automated Office documents generation / backdooring(Excel/Word/PowerPoint/Publisher/Visio/Project/Access)</li>
+              <li>» Obfuscated VBA macro with lowered entropy for ML-based detection rate reduction, VBE/JSE script encoding<li>
+              <li>» Automated Office documents generation / backdooring (Excel/Word/PowerPoint/Publisher/Visio/Project/Access)</li>
               <li>» Translation of VBA scripts into WSH ones (VBS, SCT,HTA, WSF, WSC, …).</li>
-              <li>» VBA Stomping/Purging/anonymization/vbaProject.binmetadata presetting trickery applied on generateddocuments</li>
+              <li>» VBA Stomping/Purging/anonymization/vbaProject.bin metadata presetting trickery applied on generated documents</li>
               </ol>
           </li>
           <li>» Up to 5 minutes to get advanced weaponized Officedocument or WSH script.</li>
@@ -196,7 +197,7 @@
       </div> 
 
       <div class="Page-body hero-body is-flex is-flex is-justify-content-space-between hidden">
-        <div>
+        <div class="separate-div">
           <ol class="Page-list">
             <li>» Basic support for MacOS Office payloads</li>
             <li>» Variety of VBA generators implement among the others:
@@ -220,7 +221,7 @@
         </div>
 
         <div>
-          <figure class="Page1-image image is-572x335">
+          <figure class="Page1-image image is-572x335 img-border">
             <img src="assets/images/Page3-image.png" alt="Page3-image">
           </figure>
         </div>
@@ -251,20 +252,20 @@
       </div> 
 
       <div class="Page-body hero-body is-flex is-flex is-justify-content-space-between hidden">
-        <div class="is-flex is-flex-direction-column">
+        <div class="is-flex is-flex-direction-column separate-div">
           <ol class="Page-list pb-6">
             <li>» Thoroughly documented</li>
             <li>» Weaponization tutorials and guidance included</li>
             <li>» Convenient updater</li>
           </ol>
 
-          <figure class="Page1-image image is-646x410">
+          <figure class="Page1-image image is-646x410 is-align-items-center img-border">
             <img src="assets/images/Page4.1-image.png" alt="Page4.1-image">
           </figure>
         </div>
 
         <div>
-          <figure class="Page1-image image is-798x642 pl-4">
+          <figure class="Page1-image image is-798x642 is-align-items-center img-border">
             <img src="assets/images/Page4.2-image.png" alt="Page4.2-image">
           </figure>
         </div>
@@ -300,7 +301,7 @@
             <li>» Modularity of the framework helps crafting automation scripts & CI/CD pipelines as well as reuse separate tools for different purposes</li><br/>
             <li>» Tools can be invoked with command line parameters
               <ol class="pl-4">
-                <li class="is-flex">» But also, parameters can be moved to <p class="ml-2" style="color: #33FF99;">external, reusable YAML files</p></li>
+                <li>» But also, parameters can be moved to <a style="color: #33FF99;">external, reusable YAML files</a></li>
                 <li>» Additionally, framework works with global-defaults YAMLs</li>
               </ol>
             </li><br/>
@@ -316,11 +317,11 @@
         </div>
 
         <div>
-          <figure class="Page1-image image is-572x335 pl-6">
+          <figure class="Page1-image image is-572x335 is-align-items-center pb-4 img-border">
             <img src="assets/images/Page3-image.png" alt="Page3-image">
           </figure>
 
-          <figure class="Page1-image image is-798x642 pl-4 pt-6">
+          <figure class="Page1-image image is-798x642 is-align-items-center img-border">
             <img src="assets/images/Page5-image.png" alt="Page5-image">
           </figure>
 
@@ -348,11 +349,11 @@
         <figure class="image is-32x32 is-align-self-center">
           <img src="assets/icons/file-title-icon.svg" alt="file-format" />
         </figure>
-        <h1 class="Page-title has-text-weight-bold pl-4">Formats supported</h1>
+        <h1 class="Page-title has-text-weight-bold pl-2">Formats supported</h1>
       </div> 
 
       <div class="Page-body hero-body is-flex is-flex is-justify-content-space-between hidden">
-        <div>
+        <div class="separate-div">
           <ol class="Page-list">
             <li>» Office</li>
               <ol class="pl-4">
@@ -368,23 +369,23 @@
                 <li>» VBS, VBE, HTA, SCT, WSF, WSC, XSL</li>
               </ol>
             </li>
-            <li class="is-flex">» Feature-rich <p class="ml-2" style="color: #33FF99;">HTML Smuggling</p></li>
+            <li>» Feature-rich <a style="color: #33FF99;">HTML Smuggling</a></li>
             <li>» Containers</li>
-            <li class="is-flex"><p class="mr-2" style="color: #33FF99;">» Cutting-Edge LNK</p> attacks implemented, </li>
+            <li><a style="color: #33FF99;">» Cutting-Edge LNK</a> attacks implemented, </li>
             <li>» URL, CHM</li>
           </ol>
 
-          <figure class="Page1-image image is-827x211 pt-4">
+          <figure class="Page1-image image is-827x211 pt-4 img-border">
             <img src="assets/images/Page6.1-image.png" alt="Page6.1-image">
           </figure>
         </div>
 
         <div>
-          <figure class="Page1-image image is-772x275">
+          <figure class="Page1-image image is-772x275 is-align-items-center pb-4 img-border">
             <img src="assets/images/Page6.2-image.png" alt="Page6.2-image">
           </figure>
 
-          <figure class="Page1-image image is-496x244 pt-6 pl-4">
+          <figure class="Page1-image image is-496x244 is-align-items-center img-border">
             <img src="assets/images/Page6.3-image.png" alt="Page5-image">
           </figure>
 
@@ -418,24 +419,22 @@
         </div>
       </div> 
 
-      <div class="Page-body hero-body is-flex is-flex is-justify-content-space-between hidden">
-        <div>
+      <div class="Page-body hero-body is-flex is-justify-content-space-between hidden">
+        <div class="separate-div">
           <ol class="Page-list">
             <li>» One-stop-shop to craft them all!</li>
             <li>» Generates dodgy VBA code or fully-fledged documents/scripts in a single command shot.</li>
             <li>» Support for 22 generators and 22 launchers</li>
           </ol>
 
-          <figure class="Page1-image image is-435x363 py-6">
+          <figure class="Page1-image image is-435x363 py-6 img-border">
             <img src="assets/images/Page7.1-image.png" alt="Page7.1-image">
           </figure>
         </div>
 
-        <div>
-          <figure class="Page1-image image is-712x591 pl-6">
-            <img src="assets/images/Page7.2-image.png" alt="Page7.2-image">
-          </figure>
-        </div>
+        <figure class="Page1-image image is-712x591 is-align-items-center img-border">
+          <img src="assets/images/Page7.2-image.png" alt="Page7.2-image">
+        </figure>
       </div>
 
       <div class="hero-footer is-align-self-center">
@@ -465,8 +464,8 @@
         </div>
       </div> 
 
-      <div class="Page-body hero-body is-flex is-flex is-justify-content-space-between hidden">
-        <div>
+      <div class="Page-body hero-body is-flex is-justify-content-space-between hidden">
+        <div class="separate-div">
           <ol class="Page-list">
             <li>» Takes input VBA script – outputs its obfuscated form.</li>
             <li>» Features:
@@ -484,38 +483,744 @@
             </li>
           </ol>
 
-          <figure class="Page1-image image is-593x223 py-6">
+          <figure class="Page1-image image is-593x223 py-6 img-border">
             <img src="assets/images/Page8.1-image.png" alt="Page8.1-image">
           </figure>
 
         </div>
 
         <div>
-          <figure class="Page1-image image is-459x408 pl-6">
+          <figure class="Page1-image image is-459x408 is-align-items-center img-border">
             <img src="assets/images/Page8.2-image.png" alt="Page8.2-image">
           </figure>
 
-          <figure class="Page1-image image is-466x230 pl-4 pt-6">
+          <figure class="Page1-image image is-466x230 pt-6 is-align-items-center img-border">
             <img src="assets/images/Page8.3-image.png" alt="Page8.3-image">
           </figure>
         </div>
       </div>
 
-    </section>
-    <div class="has-text-centered">
-        <div class="line-footer"></div>
-        <p class="is-size-6 pt-2" style="color: rgba(255, 255, 255, 0.45);;">
-          Copyright © 2022 by <span class="icon-text">
-              <span class="icon">
-                <i class="fa-solid fa-code pr-2"></i>
-              </span>
-              <a href="https://www.ombre.tech">ombre.tech</a>
-            </span>. All rights reserved
-        </p>
+            <div class="hero-footer is-align-self-center">
+        <a href="#page-9">
+          <figure class="image is-48x48">
+            <img src="assets/icons/navigation-button.png" alt="navigation-button" />
+          </figure>
+        </a>
       </div>
+    </section>
   </div>
 
 <!-- Page #8 End -->
 
+<!-- Page #9 Start -->
+
+  <div class="container" id="page-9">
+    <section class="hero is-fullheight">
+
+      <div class="Page-title-container hero-head hidden">
+        <p style="color: #33FF99;">Batteries Included »</p>
+        <div class="is-flex">
+          <figure class="image is-32x32 is-align-self-center">
+            <img src="assets/icons/battery-title-icon.svg" alt="file-format" />
+          </figure>
+          <h1 class="Page-title has-text-weight-bold pl-4">embed.exe</h1>
+        </div>
+      </div> 
+
+      <div class="Page-body hero-body is-flex is-justify-content-space-between hidden">
+        <div class="separate-div">
+          <ol class="Page-list">
+            <li>» Takes input VBA script and automatically embeds it into output Office document</li>
+            <li>» Supports Excel, Word, PowerPoint, Access, Visio, Project</li>
+            <li>» Handles password-protected documents</li>
+            <li>» Backdoors existing documents or creates new ones</li>
+            <li>» Handles built-in exotic auto-runs such as
+              <ol class="pl-4">
+                <li>ActiveX based ones!</li>
+                <li>
+                  <ul class="pl-4">
+                    <li>» Think of auto-injected Windows Media Player OCXn</li>
+                  </ul>
+                </li>
+              </ol>
+            </li>
+          </ol>
+
+          <figure class="Page1-image image is-593x223 py-6 img-border">
+            <img src="assets/images/Page9.1-image.png" alt="Page9.1-image">
+          </figure>
+
+        </div>
+
+        <div>
+          <figure class="Page1-image image is-459x408 is-align-items-center img-border">
+            <img src="assets/images/Page9.2-image.png" alt="Page9.2-image">
+          </figure>
+
+          <figure class="Page1-image image is-466x230 pt-6 is-align-items-center img-border">
+            <img src="assets/images/Page9.3-image.png" alt="Page9.3-image">
+          </figure>
+        </div>
+      </div>
+
+      <div class="hero-footer is-align-self-center">
+        <a href="#page-10">
+          <figure class="image is-48x48">
+            <img src="assets/icons/navigation-button.png" alt="navigation-button" />
+          </figure>
+        </a>
+      </div>
+    </section>
+  </div>
+
+<!-- Page #9 End -->
+
+<!-- Page #10 Start -->
+
+  <div class="container" id="page-10">
+    <section class="hero is-fullheight">
+
+      <div class="Page-title-container hero-head hidden">
+        <p style="color: #33FF99;">Batteries Included »</p>
+        <div class="is-flex">
+          <figure class="image is-32x32 is-align-self-center">
+            <img src="assets/icons/battery-title-icon.svg" alt="file-format" />
+          </figure>
+          <h1 class="Page-title has-text-weight-bold pl-4">inject.exe</h1>
+        </div>
+      </div> 
+
+      <div class="Page-body hero-body is-flex is-justify-content-space-between hidden">
+        <div class="separate-div">
+          <ol class="Page-list">
+            <li>» Offers few approaches to inject payloads/data into Office document structures</li>
+            <li>» Handy for hiding big payloads/shellcodes stealthily in Office 2007+ ZIP</li>
+            <li>» Support for among the others: Variables, CustomXMLParts, Remote Templates, CustomUI
+              <ol class="pl-4">
+                <li><a href="https://mgeeky.tech/payload-crumbs-in-custom-parts/">» Click!</a></li>
+              </ol>
+            </li>
+          </ol>
+        </div>
+
+        <div>
+          <figure class="Page1-image image is-548x298 is-align-items-center img-border">
+            <img src="assets/images/Page10.1-image.png" alt="Page10.1-image">
+          </figure>
+
+          <figure class="Page1-image image is-681x236 pt-6 is-align-items-center img-border">
+            <img src="assets/images/Page10.2-image.png" alt="Page10.2-image">
+          </figure>
+        </div>
+      </div>
+
+      <div class="hero-footer is-align-self-center">
+        <a href="#page-11">
+          <figure class="image is-48x48">
+            <img src="assets/icons/navigation-button.png" alt="navigation-button" />
+          </figure>
+        </a>
+      </div>
+    </section>
+  </div>
+
+<!-- Page #10 End -->
+
+<!-- Page #11 Start -->
+
+  <div class="container" id="page-11">
+    <section class="hero is-fullheight">
+
+      <div class="Page-title-container hero-head hidden">
+        <p style="color: #33FF99;">Batteries Included »</p>
+        <div class="is-flex">
+          <figure class="image is-32x32 is-align-self-center">
+            <img src="assets/icons/battery-title-icon.svg" alt="file-format" />
+          </figure>
+          <h1 class="Page-title has-text-weight-bold pl-4">tamper.exe</h1>
+        </div>
+      </div> 
+
+      <div class="Page-body hero-body is-flex is-justify-content-space-between hidden">
+        <div class="separate-div">
+          <ol class="Page-list">
+            <li>» Applies few techniques on an Office document in aim to lower effective detection rate</li>
+            <li>» VBA Purging</li>
+            <li>» VBA Stomping + hiding code from GUI</li>
+            <li>» Anonymization</li>
+            <li>» vbaProject.bin renaming</li>
+            <li>» Document encryption</li>
+            <li>» File properties/metadata injection
+              <ol class="pl-4">
+                <li>» Presetting Operation-specific metadata</li>
+              </ol>
+            </li>
+          </ol>
+        </div>
+
+        <div>
+          <figure class="Page1-image image is-align-items-center img-border">
+            <img src="assets/images/Page11.1-image.png" alt="Page11.1-image">
+          </figure>
+
+          <figure class="Page1-image image pt-6 is-align-items-center img-border">
+            <img src="assets/images/Page11.2-image.png" alt="Page11.2-image">
+          </figure>
+        </div>
+      </div>
+
+      <div class="hero-footer is-align-self-center">
+        <a href="#page-12">
+          <figure class="image is-48x48">
+            <img src="assets/icons/navigation-button.png" alt="navigation-button" />
+          </figure>
+        </a>
+      </div>
+    </section>
+  </div>
+
+<!-- Page #11 End -->
+
+<!-- Page #12 Start -->
+
+  <div class="container" id="page-12">
+    <section class="hero is-fullheight">
+
+      <div class="Page-title-container hero-head hidden">
+        <p style="color: #33FF99;">Batteries Included »</p>
+        <div class="is-flex">
+          <figure class="image is-32x32 is-align-self-center">
+            <img src="assets/icons/battery-title-icon.svg" alt="file-format" />
+          </figure>
+          <h1 class="Page-title has-text-weight-bold pl-4">convert.exe</h1>
+        </div>
+      </div> 
+
+      <div class="Page-body hero-body is-flex is-justify-content-space-between hidden">
+        <div class="separate-div">
+          <ol class="Page-list">
+            <li>» Takes input VBA code, attempts to translate it into other form
+              <ol class="pl-4">
+                <li>» VBA/VBS -> HTA/VBS/SCT/XSL/WSF/WSC/… + VBE (VBScript encoded)</li>
+                <li>» JS -> HTA, JSE (Jscript encoded)</li>
+                <li>» HTA -> HTA encoded</li>
+              </ol>            
+            </li>
+            <li>» Works in two modes:
+              <ol class="pl-4">
+                <li>» Literal translation – experimental</li>
+                <li>» Embeds input VBA into dynamic Excel+VBA stub</li>
+              </ol>                 
+            </li>
+            <li>» Nice and easy way to quickly generate bunch of Initial Access scripts</li>
+          </ol>
+        </div>
+
+        <div>
+          <figure class="Page1-image image is-align-items-center img-border">
+            <img src="assets/images/Page12.1-image.png" alt="Page12.1-image">
+          </figure>
+
+          <figure class="Page1-image image pt-6 is-align-items-center img-border">
+            <img src="assets/images/Page12.2-image.png" alt="Page12.2-image">
+          </figure>
+        </div>
+      </div>
+
+      <div class="hero-footer is-align-self-center">
+        <a href="#page-13">
+          <figure class="image is-48x48">
+            <img src="assets/icons/navigation-button.png" alt="navigation-button" />
+          </figure>
+        </a>
+      </div>
+    </section>
+  </div>
+
+<!-- Page #12 End -->
+
+<!-- Page #13 Start -->
+
+  <div class="container" id="page-13">
+    <section class="hero is-fullheight">
+
+      <div class="Page-title-container hero-head hidden">
+        <p style="color: #33FF99;">Batteries Included »</p>
+        <div class="is-flex">
+          <figure class="image is-32x32 is-align-self-center">
+            <img src="assets/icons/battery-title-icon.svg" alt="file-format" />
+          </figure>
+          <h1 class="Page-title has-text-weight-bold pl-4">smuggler.exe</h1>
+        </div>
+      </div> 
+
+      <div class="Page-body hero-body is-flex is-justify-content-space-between hidden">
+        <div class="separate-div">
+          <ol class="Page-list">
+            <li>» Produces complex HTML Smuggling payloads, out of the box equipped with:
+              <ol class="pl-4">
+                <li>» Anti-Sandbox/Anti-Headless, Mouse-Movement detection logic</li>
+                <li>» Time-Delayed dropping</li>
+                <li>» Post-drop redirection</li>
+              </ol>            
+            </li>
+            <li>» Comes with a few pre-set HTML website templates:
+              <ol class="pl-4">
+                <li>» OneDrive</li>
+                <li>» SharePoint</li>
+                <li>» Blank</li>
+              </ol>                 
+            </li>
+            <li>» Custom landing-page templates can easily be integrated</li>
+          </ol>
+
+          <figure class="Page1-image image is-align-items-center img-border pt-6">
+            <img src="assets/images/Page13.1-image.png" alt="Page13.1-image">
+          </figure>
+        </div>
+
+        <div>
+          <figure class="Page1-image image is-align-items-center img-border">
+            <img src="assets/images/Page13.2-image.png" alt="Page13.2-image">
+          </figure>
+
+          <figure class="Page1-image image pt-6 is-align-items-center img-border">
+            <img src="assets/images/Page13.3-image.png" alt="Page13.3-image">
+          </figure>
+        </div>
+      </div>
+
+      <div class="hero-footer is-align-self-center">
+        <a href="#page-14">
+          <figure class="image is-48x48">
+            <img src="assets/icons/navigation-button.png" alt="navigation-button" />
+          </figure>
+        </a>
+      </div>
+    </section>
+  </div>
+
+<!-- Page #13 End -->
+
+<!-- Page #14 Start -->
+
+  <div class="container" id="page-14">
+    <section class="hero is-fullheight">
+
+      <div class="Page-title-container hero-head hidden">
+        <p style="color: #33FF99;">Batteries Included »</p>
+        <div class="is-flex">
+          <figure class="image is-32x32 is-align-self-center">
+            <img src="assets/icons/battery-title-icon.svg" alt="file-format" />
+          </figure>
+          <h1 class="Page-title has-text-weight-bold pl-4">lnker.exe</h1>
+        </div>
+      </div> 
+
+      <div class="Page-body hero-body is-flex is-justify-content-space-between hidden">
+        <div class="separate-div">
+          <ol class="Page-list">
+            <li>» Generates malicious LNK/URL files with custom parameters or via built-in presets</li>
+            <li>» Can backdoor existing LNKs</li>
+            <li>» Currently provides 10+ attack presets, including:
+              <ol class="pl-4">
+                <li>» Embedding files into ZIP, that gets bundled into LNK</li>
+                <li>» WSC, XSL, SCT, DNS stagers</li>
+              </ol>    
+            </li>
+            <li>» Incorporates LOLBASes, applies obfuscation</li>
+            <li>» Offers numerous GUI masquerading tricks</li>
+          </ol>
+
+          <div class="is-flex">
+            <figure class="Page1-image image is-align-items-center img-border pt-6 pr-4">
+              <img src="assets/images/Page14.1-image.png" alt="Page14.1-image">
+            </figure>
+
+            <figure class="Page1-image image is-align-items-center img-border pt-6">
+              <img src="assets/images/Page14.2-image.png" alt="Page14.2-image">
+            </figure>
+          </div>
+        </div>
+
+        <div>
+          <figure class="Page1-image image pt-6 is-align-items-center img-border">
+            <img src="assets/images/Page14.3-image.png" alt="Page14.3-image">
+          </figure>
+        </div>
+      </div>
+
+      <div class="hero-footer is-align-self-center">
+        <a href="#page-15">
+          <figure class="image is-48x48">
+            <img src="assets/icons/navigation-button.png" alt="navigation-button" />
+          </figure>
+        </a>
+      </div>
+    </section>
+  </div>
+
+<!-- Page #14 End -->
+
+<!-- Page #15 Start -->
+
+  <div class="container" id="page-15">
+    <section class="hero is-fullheight">
+
+      <div class="Page-title-container hero-head hidden">
+        <p style="color: #33FF99;">Batteries Included »</p>
+        <div class="is-flex">
+          <figure class="image is-32x32 is-align-self-center">
+            <img src="assets/icons/battery-title-icon.svg" alt="file-format" />
+          </figure>
+          <h1 class="Page-title has-text-weight-bold pl-4">chmer.exe</h1>
+        </div>
+      </div> 
+
+      <div class="Page-body hero-body is-flex is-justify-content-space-between hidden">
+        <div class="separate-div">
+          <ol class="Page-list">
+            <li>» Generates malicious CHM compiled HTML documentation files</li>
+            <li>» Can create blank CHM, based off input HTML as well as backdoor existing one.</li>
+            <li>» Runs up to 3 commands or input VBScript/Jscript</li>
+            <li>» Incorporates LOLBASes</li>
+            <li>» No additional dependencies required.</li>
+          </ol>
+
+          <div class="is-flex">
+            <figure class="Page1-image image is-align-items-center img-border pt-6 pr-4">
+              <img src="assets/images/Page15.1-image.png" alt="Page15.1-image">
+            </figure>
+
+            <figure class="Page1-image image is-align-items-center img-border pt-6">
+              <img src="assets/images/Page15.2-image.png" alt="Page15.2-image">
+            </figure>
+          </div>
+        </div>
+
+        <div>
+          <figure class="Page1-image image pt-6 is-align-items-center img-border">
+            <img src="assets/images/Page15.3-image.png" alt="Page15.3-image">
+          </figure>
+
+          <figure class="Page1-image image pt-6 is-align-items-center img-border">
+            <img src="assets/images/Page15.4-image.png" alt="Page15.4-image">
+          </figure>
+        </div>
+      </div>
+
+      <div class="hero-footer is-align-self-center">
+        <a href="#page-16">
+          <figure class="image is-48x48">
+            <img src="assets/icons/navigation-button.png" alt="navigation-button" />
+          </figure>
+        </a>
+      </div>
+    </section>
+  </div>
+
+<!-- Page #15 End -->
+
+<!-- Page #16 Start -->
+
+  <div class="container" id="page-16">
+    <section class="hero is-fullheight">
+
+      <div class="Page-title-container hero-head hidden">
+        <p style="color: #33FF99;">Batteries Included »</p>
+        <div class="is-flex">
+          <figure class="image is-32x32 is-align-self-center">
+            <img src="assets/icons/battery-title-icon.svg" alt="file-format" />
+          </figure>
+          <h1 class="Page-title has-text-weight-bold pl-4">package.exe</h1>
+        </div>
+      </div> 
+
+      <div class="Page-body hero-body is-flex is-justify-content-space-between hidden">
+        <div class="separate-div">
+          <ol class="Page-list">
+            <li>» Extended version of my publicly available <a style="color: blue; text-decoration: underline;">PackMyPayload</a></li>
+            <li>» Takes input files/directories and packs them into output containers</li>
+            <li>» Bundles files & directories into LNKs using custom, non-public technique</li>
+            <li>» Supports inserting files and ActiveX COMs as OLE objects into Office documents</li>
+            <li>» Can be used to insert pictures & tracking-pixels to Office documents</li>
+          </ol>
+
+          <figure class="Page1-image image is-align-items-center img-border pt-6">
+            <img src="assets/images/Page16.1-image.png" alt="Page16.1-image">
+          </figure>
+        </div>
+
+        <div>
+          <figure class="Page1-image image pt-6 is-align-items-center img-border">
+            <img src="assets/images/Page16.2-image.png" alt="Page16.2-image">
+          </figure>
+        </div>
+      </div>
+
+      <div class="hero-footer is-align-self-center">
+        <a href="#page-17">
+          <figure class="image is-48x48">
+            <img src="assets/icons/navigation-button.png" alt="navigation-button" />
+          </figure>
+        </a>
+      </div>
+    </section>
+  </div>
+
+<!-- Page #16 End -->
+
+<!-- Page #17 Start -->
+
+  <div class="container" id="page-17">
+    <section class="hero is-fullheight">
+
+      <div class="Page-title-container hero-head hidden">
+        <p style="color: #33FF99;">Batteries Included »</p>
+        <div class="is-flex">
+          <figure class="image is-32x32 is-align-self-center">
+            <img src="assets/icons/battery-title-icon.svg" alt="file-format" />
+          </figure>
+          <h1 class="Page-title has-text-weight-bold pl-4">lolbaser.exe</h1>
+        </div>
+      </div> 
+
+      <div class="Page-body hero-body is-flex is-justify-content-space-between hidden">
+        <div class="separate-div">
+          <ol class="Page-list">
+            <li>» Used by generate.exe/lnker.exe/chmer.exe to easily execute specified command through a LOLBIN</li>
+            <li>» Easied LOLBINs customisation and adding new ones</li>
+            <li>» Takes command on input, surrounds it into specified/all available LOLBINs</li>
+            <li>» Comes only with verified & filtered LOLBINs set</li>
+          </ol>
+        </div>
+
+        <div>
+          <figure class="Page1-image image pt-6 is-align-items-center img-border">
+            <img src="assets/images/Page17.1-image.png" alt="Page17.1-image">
+          </figure>
+        </div>
+      </div>
+
+      <div class="hero-footer is-align-self-center">
+        <a href="#page-18">
+          <figure class="image is-48x48">
+            <img src="assets/icons/navigation-button.png" alt="navigation-button" />
+          </figure>
+        </a>
+      </div>
+    </section>
+  </div>
+
+<!-- Page #17 End -->
+
+<!-- Page #18 Start -->
+
+  <div class="container" id="page-18">
+    <section class="hero is-fullheight">
+
+      <div class="Page-title-container hero-head hidden">
+        <p style="color: #33FF99;">Batteries Included »</p>
+        <div class="is-flex">
+          <figure class="image is-32x32 is-align-self-center">
+            <img src="assets/icons/battery-title-icon.svg" alt="file-format" />
+          </figure>
+          <h1 class="Page-title has-text-weight-bold pl-4">macroless.exe</h1>
+        </div>
+      </div> 
+
+      <div class="Page-body hero-body is-flex is-justify-content-space-between hidden">
+        <div class="separate-div">
+          <ol class="Page-list">
+            <li>» Builds on top of DDE/Fields/Complexfields injection</li>
+            <li>» Implements a few macro-less infection strategies.
+              <ol class="pl-4">
+                <li>» Excel reconnessaince</li>
+                <li>» steal.NetNTLM</li>
+                <li>» steal.NetNTLM2</li>
+                <li>» ddeauto.execute</li>
+                <li>» link.com</li>
+                <li>» exfil.file</li>
+              </ol>                 
+            </li>
+          </ol>
+
+          <figure class="Page1-image image is-align-items-center img-border pt-6">
+            <img src="assets/images/Page18.1-image.png" alt="Page18.1-image">
+          </figure>
+        </div>
+
+        <div>
+          <figure class="Page1-image image is-align-items-center img-border">
+            <img src="assets/images/Page18.2-image.png" alt="Page18.2-image">
+          </figure>
+
+          <figure class="Page1-image image pt-6 is-align-items-center img-border">
+            <img src="assets/images/Page18.3-image.png" alt="Page18.3-image">
+          </figure>
+        </div>
+      </div>
+
+      <div class="hero-footer is-align-self-center">
+        <a href="#page-19">
+          <figure class="image is-48x48">
+            <img src="assets/icons/navigation-button.png" alt="navigation-button" />
+          </figure>
+        </a>
+      </div>
+    </section>
+  </div>
+
+<!-- Page #18 End -->
+
+<!-- Page #19 Start -->
+
+  <div class="container" id="page-19">
+    <section class="hero is-fullheight">
+
+      <div class="Page-title-container hero-head hidden">
+        <p style="color: #33FF99;">Batteries Included »</p>
+        <div class="is-flex">
+          <figure class="image is-32x32 is-align-self-center">
+            <img src="assets/icons/battery-title-icon.svg" alt="file-format" />
+          </figure>
+          <h1 class="Page-title has-text-weight-bold pl-4">shellcode2vba.exe</h1>
+        </div>
+      </div> 
+
+      <div class="Page-body hero-body is-flex is-flex-direction-column hidden">
+        <div class="separate-div">
+          <ol class="Page-list">
+            <li>» Takes arbitrary input file and generates reliable output VBA encompassing that file.</li>
+            <li>» Generated VBA will follow concatenation approach to rebuild input shellcode, but in a slightly minimized approach.</li>
+          </ol>
+        </div>
+
+        <div class="is-flex pt-6">
+          <figure class="Page1-image image is-align-items-center img-border">
+            <img src="assets/images/Page19.1-image.png" alt="Page19.2-image">
+          </figure>
+
+          <figure class="Page1-image image is-align-self-center px-2">
+            <img src="assets/images/Page19.2-vector.png" alt="Page19.2-vector">
+          </figure>
+
+          <figure class="Page1-image image is-align-items-center img-border">
+            <img src="assets/images/Page19.3-image.png" alt="Page19.3-image">
+          </figure>
+        </div>
+      </div>
+
+      <div class="hero-footer is-align-self-center">
+        <a href="#page-20">
+          <figure class="image is-48x48">
+            <img src="assets/icons/navigation-button.png" alt="navigation-button" />
+          </figure>
+        </a>
+      </div>
+    </section>
+  </div>
+
+<!-- Page #19 End -->
+
+<!-- Page #20 Start -->
+
+  <div class="container" id="page-20">
+    <section class="hero is-fullheight">
+
+      <div class="Page-title-container hero-head hidden">
+        <p style="color: #33FF99;">Batteries Included »</p>
+        <div class="is-flex">
+          <figure class="image is-32x32 is-align-self-center">
+            <img src="assets/icons/battery-title-icon.svg" alt="file-format" />
+          </figure>
+          <h1 class="Page-title has-text-weight-bold pl-4">encode.exe</h1>
+        </div>
+      </div> 
+
+      <div class="Page-body hero-body is-flex is-flex-direction-column hidden">
+        <div class="separate-div">
+          <ol class="Page-list">
+            <li>» XORs and/or base64-encodes input files for stealthy URL-based delivery</li>
+            <li>» Nicely integrates with generate.py capability to unXOR and deBase64 payloads upon downloading</li>
+          </ol>
+        </div>
+
+        <div class="is-flex pt-6">
+          <figure class="Page1-image image is-align-items-center img-border pr-4">
+            <img src="assets/images/Page20.1-image.png" alt="Page20.2-image">
+          </figure>
+
+          <figure class="Page1-image image is-align-items-center img-border">
+            <img src="assets/images/Page20.2-image.png" alt="Page20.2-image">
+          </figure>
+        </div>
+      </div>
+
+      <div class="hero-footer is-align-self-center">
+        <a href="#page-21">
+          <figure class="image is-48x48">
+            <img src="assets/icons/navigation-button.png" alt="navigation-button" />
+          </figure>
+        </a>
+      </div>
+    </section>
+  </div>
+
+<!-- Page #20 End -->
+
+<!-- Page #21 Start -->
+
+  <div class="container">
+    <section class="hero is-fullheight">
+      <div class="hero-head mt-6">
+        <img 
+          src="assets/icons/arrow-right-down.svg" 
+          alt="arrow-right-down"
+          width="23px"
+          height="23px"
+        />
+        <h1 class="is-size-4 has-text-weight-bold" style="color: #FFFFFF;">Sounds interesting?</h1>
+        <p class="is-size-2 has-text-weight-bold"><a href="mailto::red-macros@binary-offensive.com">Reach me out!</a></p>
+      </div>
+
+      <div class="hero-body is-flex is-flex-wrap-wrap is-justify-content-space-between">
+        <div class="community-icons is-flex is-flex-direction-column">
+          <span class="icon-text py-3">
+            <span class="icon">
+              <i class="fa-brands fa-twitter"></i>
+            </span>
+            <span class="is-size-4">@mariuszbit</span>
+          </span>
+          <span class="icon-text py-3">
+            <span class="icon">
+              <i class="fa-brands fa-github"></i>
+            </span>
+            <span class="is-size-4">mgeeky</span>
+          </span>
+          <span class="icon-text py-3">
+            <span class="icon">
+              <i class="fa-sharp fa-solid fa-envelope"></i>
+            </span>
+            <span class="is-size-4"><a href="mailto::red-macros@binary-offensivecom">mb@binary-offensive.com</a></span>
+          </span>
+        </div>
+      </div>
+    </section>
+  </div>
+
+<!-- Page #21 End-->
+
+<div class="has-text-centered">
+   <div class="line-footer"></div>
+   <p class="is-size-6 pt-2" style="color: rgba(255, 255, 255, 0.45);;">
+     Copyright © 2022 by <span class="icon-text">
+         <span class="icon">
+           <i class="fa-solid fa-code pr-2"></i>
+         </span>
+         <a href="https://www.ombre.tech">ombre.tech</a>
+       </span>. All rights reserved
+   </p>
+ </div>
 </body>
 </html>
