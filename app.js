@@ -13,4 +13,12 @@ const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
 
-const photos = document.querySelectorAll('#photo');
+function resizeImage(img) {
+  const boolean = img.classList.contains('scaleImage');
+
+  if (boolean == false) {
+    img.classList.add('scaleImage');
+  } else {
+    img.classList.remove('scaleImage');
+  }
+}
